@@ -1,0 +1,30 @@
+1) Launch EC2 | Amazon linux 2023 | t2 micro | webserver
+2) key.pem | SG:Inbopund 22
+3) connect | EC2 Instance Connect
+Putty | piublic-ip, username ec2-user >> data | .ppk
+puttygen convert
+4) cd Downloads
+ssh -i username@DNS
+5) sudo yum update -y
+sudo yum install git -y
+git --version
+
+6) git config --global user.name "atulkamble"
+git config --global user.email "atul_kamble@hotmail.com"
+git config --list
+
+7) www.github.com >> sign in
+
+Create repo
+
+clone repo-url
+
+git clone repo-url
+
+git clone https://github.com/atulkamble/myethansrepo.git
+cd myethansrepo
+
+touch test.py | New-Item test.py
+git add test.py
+git commit -m "added code"
+git push origin main
